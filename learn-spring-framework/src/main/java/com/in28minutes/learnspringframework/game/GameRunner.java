@@ -1,9 +1,11 @@
 package com.in28minutes.learnspringframework.game;
 
 public class GameRunner {
-    MarioGame game;
+    // This class is tightly coupled to a specific game.
 
-    public GameRunner(MarioGame game) {
+    private SuperContraGame game;
+
+    public GameRunner(SuperContraGame game) {
         this.game = game;
     }
 
