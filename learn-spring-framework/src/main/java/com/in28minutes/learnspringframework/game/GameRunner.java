@@ -3,9 +3,9 @@ package com.in28minutes.learnspringframework.game;
 public class GameRunner {
     // This class is tightly coupled to a specific game.
 
-    private SuperContraGame game;
+    private GamingConsole game;
 
-    public GameRunner(SuperContraGame game) {
+    public GameRunner(GamingConsole game) {
         this.game = game;
     }
 
