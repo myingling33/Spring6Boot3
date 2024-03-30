@@ -8,14 +8,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class LoginController {
 
-    // /login => com.in28minutes.springboot.myfirstwebapp.hello.LoginController => login.jsp
+    // private Logger logger = LoggerFactory.getLogger(getClass());
 
-    //http://localhost:8080/login?name=Ranga
-    //Model
     @RequestMapping("login")
     public String goToLoginPage(@RequestParam String name, ModelMap model) {
+
         model.put("name", name);
-        System.out.println("Request param is " + name); // NOT RECOMMENDED
+
+        // logger.debug("Request param is {}", name);
+        // logger.info("I want this printed at info level");
+        // logger.warn("I want this printed at warn level");
+
         return "login";
     }
 }
